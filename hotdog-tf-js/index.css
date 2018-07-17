@@ -1,0 +1,44 @@
+body, html {
+    border: 0;
+    margin: 0;
+    background: #1d2021;
+}
+
+#app {
+    font-family: sans-serif, helvetica, Verdana, Arial;
+    color: #eddbb2;
+}
+
+#content {
+    background: #282828;
+    width: 100%;
+    margin: 16px 0;
+    padding:  16px 0;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+#content > * {
+    width: 640px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+.message {
+    text-align: center;
+    color: #98971a;
+    font-size: 60px;
+    line-height: 480px;
+}
+
+.message:hover {
+    background: #1d2021;
+    color: #b8bb26;
+}
+
+.bar {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}

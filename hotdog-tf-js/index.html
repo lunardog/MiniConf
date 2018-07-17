@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.9.0"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Place your code in the script tag below. You can also use an external .js file -->
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="content">
+        <div class="message" v-if="!playing" v-on:click="togglePlay">▶</div>
+        <canvas id="the_canvas" width="640" height="480" v-show="playing" v-on:click="togglePlay"></canvas>
+      </div>
+      <div class="bar">
+        <h3>{{message}}</h3>
+      </div>
+      <video id="the_video" v-bind:src="url" width="640" height="480" style="display: none"></video>
+    </div>
+
+    <script type="text/javascript" src="index.js">
+    </script>
+  </body>
+</html>
